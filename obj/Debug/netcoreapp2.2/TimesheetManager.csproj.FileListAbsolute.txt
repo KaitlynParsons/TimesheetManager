@@ -1,0 +1,14 @@
+D:\VisualStudioCode\TimesheetManager\TimesheetManager\bin\Debug\netcoreapp2.2\TimesheetManager.deps.json
+D:\VisualStudioCode\TimesheetManager\TimesheetManager\bin\Debug\netcoreapp2.2\TimesheetManager.runtimeconfig.json
+D:\VisualStudioCode\TimesheetManager\TimesheetManager\bin\Debug\netcoreapp2.2\TimesheetManager.runtimeconfig.dev.json
+D:\VisualStudioCode\TimesheetManager\TimesheetManager\bin\Debug\netcoreapp2.2\TimesheetManager.dll
+D:\VisualStudioCode\TimesheetManager\TimesheetManager\bin\Debug\netcoreapp2.2\TimesheetManager.pdb
+D:\VisualStudioCode\TimesheetManager\TimesheetManager\obj\Debug\netcoreapp2.2\TimesheetManager.csprojAssemblyReference.cache
+D:\VisualStudioCode\TimesheetManager\TimesheetManager\obj\Debug\netcoreapp2.2\TimesheetManager.csproj.CoreCompileInputs.cache
+D:\VisualStudioCode\TimesheetManager\TimesheetManager\obj\Debug\netcoreapp2.2\TimesheetManager.RazorAssemblyInfo.cache
+D:\VisualStudioCode\TimesheetManager\TimesheetManager\obj\Debug\netcoreapp2.2\TimesheetManager.RazorAssemblyInfo.cs
+D:\VisualStudioCode\TimesheetManager\TimesheetManager\obj\Debug\netcoreapp2.2\TimesheetManager.AssemblyInfoInputs.cache
+D:\VisualStudioCode\TimesheetManager\TimesheetManager\obj\Debug\netcoreapp2.2\TimesheetManager.AssemblyInfo.cs
+D:\VisualStudioCode\TimesheetManager\TimesheetManager\obj\Debug\netcoreapp2.2\TimesheetManager.RazorTargetAssemblyInfo.cache
+D:\VisualStudioCode\TimesheetManager\TimesheetManager\obj\Debug\netcoreapp2.2\TimesheetManager.dll
+D:\VisualStudioCode\TimesheetManager\TimesheetManager\obj\Debug\netcoreapp2.2\TimesheetManager.pdb
