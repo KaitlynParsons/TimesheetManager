@@ -62,26 +62,5 @@ namespace TimesheetManager.Models
 
         [BsonElement("date")]
         public string date { get; set; }
-
-        public void SerializeNutrients()
-        {
-            var root = new BsonDocument() { { "nutrients", new BsonDocument() } };
-            foreach (var nutrient in this.Nutrients)
-            {
-                if (string.IsNullOrWhiteSpace(nutrient.Definition.TagName))
-                {
-                    continue;
-                }
-                root["nutrients"][nutrient.Definition.TagName] =
-                  new BsonDocument() {
-        {"id", nutrient.NutrientId},
-        {"amount", nutrient.AmountInHundredGrams},
-        {"description", nutrient.Definition.Description},
-        {"uom", nutrient.Definition.UnitOfMeasure},
-        {"sortOrder", nutrient.Definition.SortOrder}
-                  };
-            }
-            this.NutrientDoc = root;
-        }
     }
 }
