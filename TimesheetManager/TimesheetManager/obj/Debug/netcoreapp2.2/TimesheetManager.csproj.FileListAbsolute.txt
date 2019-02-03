@@ -12,3 +12,17 @@ D:\VisualStudioCode\TimesheetManager\TimesheetManager\obj\Debug\netcoreapp2.2\Ti
 D:\VisualStudioCode\TimesheetManager\TimesheetManager\obj\Debug\netcoreapp2.2\TimesheetManager.RazorTargetAssemblyInfo.cache
 D:\VisualStudioCode\TimesheetManager\TimesheetManager\obj\Debug\netcoreapp2.2\TimesheetManager.dll
 D:\VisualStudioCode\TimesheetManager\TimesheetManager\obj\Debug\netcoreapp2.2\TimesheetManager.pdb
+D:\VisualStudioCode\TSM\TimesheetManager\TimesheetManager\bin\Debug\netcoreapp2.2\TimesheetManager.deps.json
+D:\VisualStudioCode\TSM\TimesheetManager\TimesheetManager\bin\Debug\netcoreapp2.2\TimesheetManager.runtimeconfig.json
+D:\VisualStudioCode\TSM\TimesheetManager\TimesheetManager\bin\Debug\netcoreapp2.2\TimesheetManager.runtimeconfig.dev.json
+D:\VisualStudioCode\TSM\TimesheetManager\TimesheetManager\bin\Debug\netcoreapp2.2\TimesheetManager.dll
+D:\VisualStudioCode\TSM\TimesheetManager\TimesheetManager\bin\Debug\netcoreapp2.2\TimesheetManager.pdb
+D:\VisualStudioCode\TSM\TimesheetManager\TimesheetManager\obj\Debug\netcoreapp2.2\TimesheetManager.csprojAssemblyReference.cache
+D:\VisualStudioCode\TSM\TimesheetManager\TimesheetManager\obj\Debug\netcoreapp2.2\TimesheetManager.csproj.CoreCompileInputs.cache
+D:\VisualStudioCode\TSM\TimesheetManager\TimesheetManager\obj\Debug\netcoreapp2.2\TimesheetManager.RazorAssemblyInfo.cache
+D:\VisualStudioCode\TSM\TimesheetManager\TimesheetManager\obj\Debug\netcoreapp2.2\TimesheetManager.RazorAssemblyInfo.cs
+D:\VisualStudioCode\TSM\TimesheetManager\TimesheetManager\obj\Debug\netcoreapp2.2\TimesheetManager.AssemblyInfoInputs.cache
+D:\VisualStudioCode\TSM\TimesheetManager\TimesheetManager\obj\Debug\netcoreapp2.2\TimesheetManager.AssemblyInfo.cs
+D:\VisualStudioCode\TSM\TimesheetManager\TimesheetManager\obj\Debug\netcoreapp2.2\TimesheetManager.RazorTargetAssemblyInfo.cache
+D:\VisualStudioCode\TSM\TimesheetManager\TimesheetManager\obj\Debug\netcoreapp2.2\TimesheetManager.dll
+D:\VisualStudioCode\TSM\TimesheetManager\TimesheetManager\obj\Debug\netcoreapp2.2\TimesheetManager.pdb
