@@ -49,6 +49,5 @@ namespace TimesheetManager.Models
         public string signature { get; set; }
         [BsonElement("date")]
         public string date { get; set; }
-
     }
 }

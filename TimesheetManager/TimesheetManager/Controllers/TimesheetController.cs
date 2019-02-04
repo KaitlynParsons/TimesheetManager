@@ -19,17 +19,33 @@ namespace TimesheetManager.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<TimesheetModel>> Get()
+        public ActionResult<List<TimesheetModel>> GetTimesheets()
         {
             return _timesheetService.Get();
         }
 
+        [HttpGet("{id:length(24)}", Name = "GetTimesheet")]
+        public ActionResult<TimesheetModel> GetTimesheet(string id)
+        {
+            var timesheet = _timesheetService.Get(id);
+
+            if (timesheet == null)
+            {
+                return NotFound();
+            }
+
+            return timesheet;
+        }
+
         [HttpPost]
-        public ActionResult<TimesheetModel> Create(TimesheetModel timesheet)
+        public ActionResult<TimesheetModel> PostTimesheet(TimesheetModel timesheet)
         {
             _timesheetService.Create(timesheet);
 
-            return CreatedAtRoute("GetTimesheets", new { id = timesheet.Id.ToString() }, timesheet);
+            return CreatedAtRoute(
+                        routeName: "GetTimesheet",
+                        routeValues: new { id = timesheet.Id },
+                        value: timesheet);
         }
 
 

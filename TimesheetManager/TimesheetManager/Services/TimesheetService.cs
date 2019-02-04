@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -29,7 +30,7 @@ namespace TimesheetManager.Services
             return _timesheet.Find<TimesheetModel>(timesheet => timesheet.Id == id).FirstOrDefault();
         }
 
-        public TimesheetModel Create(TimesheetModel timesheet)
+        public TimesheetModel Create([FromBody]TimesheetModel timesheet)
         {
             _timesheet.InsertOne(timesheet);
             return timesheet;
