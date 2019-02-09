@@ -20,20 +20,12 @@ namespace TimesheetManager.Models
         [BsonElement("day")]
         public Days Day { get; set; }
         [BsonElement("Start")]
-        [Required(AllowEmptyStrings = true)]
-        [DisplayFormat(ConvertEmptyStringToNull = false)]
         public string Start { get; set; }
         [BsonElement("LunchStart")]
-        [Required(AllowEmptyStrings = true)]
-        [DisplayFormat(ConvertEmptyStringToNull = false)]
         public string LunchStart { get; set; }
         [BsonElement("LunchEnd")]
-        [Required(AllowEmptyStrings = true)]
-        [DisplayFormat(ConvertEmptyStringToNull = false)]
         public string LunchEnd { get; set; }
         [BsonElement("End")]
-        [Required(AllowEmptyStrings = true)]
-        [DisplayFormat(ConvertEmptyStringToNull = false)]
         public string End { get; set; }
     }
 

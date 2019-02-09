@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Frontend\src\app\helpers\constants.ts" />
+    <None Remove="Frontend\src\app\models\timesheetModel.ts" />
     <None Remove="Models\TimesheetModel.cs~RF1adb3c8.TMP" />
   </ItemGroup>
 
@@ -16,6 +18,15 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.0" />
    	<PackageReference Include="MongoDB.Driver" Version="2.7.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="Frontend\src\app\helpers\constants.ts" />
+    <TypeScriptCompile Include="Frontend\src\app\models\timesheetModel.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Frontend\src\app\services\" />
   </ItemGroup>
 
 </Project>
