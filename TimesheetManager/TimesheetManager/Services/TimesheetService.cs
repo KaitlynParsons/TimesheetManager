@@ -44,7 +44,7 @@ namespace TimesheetManager.Services
         /// </summary>
         /// <param name="timesheet"></param>
         /// <returns></returns>
-        public TimesheetModel Create([FromBody]TimesheetModel timesheet)
+        public TimesheetModel Create(TimesheetModel timesheet)
         {
             _timesheet.InsertOne(timesheet);
             return timesheet;
