@@ -1,19 +1,18 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 
 namespace TimesheetManager.Models
 {
     public enum Days
     {
-        Monday,
-        Tuesday,
-        Wednesday,
-        Thursday,
-        Friday,
-        Saturday,
-        Sunday
+        Friday = 140,
+        Saturday = 200,
+        Sunday = 270,
+        Monday = 330,
+        Tuesday = 390,
+        Wednesday = 460,
+        Thursday = 540
     }
     public class TimesModel
     {

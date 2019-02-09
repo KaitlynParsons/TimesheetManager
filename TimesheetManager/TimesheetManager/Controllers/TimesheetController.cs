@@ -90,9 +90,6 @@ namespace TimesheetManager.Controllers
         public void FillPdf(TimesheetModel timesheet, string outputPath)
         {
             string inputPath = Path.Combine(hostingEnvironment.ContentRootPath, "timesheets\\blank_timesheet-rotated.pdf");
-            //initialise x locations on timesheet template
-            int[] x = { 140, 200, 270, 330, 390, 460, 540 };
-            int count = 0;
             // read the timesheet template
             PdfReader reader = new PdfReader(inputPath);
             // Work with only page 1 
@@ -108,11 +105,10 @@ namespace TimesheetManager.Controllers
             // iterate through the x locations on the timesheet template and add each time value to its given position
             foreach (var time in timesheet.timesheetTotals)
             {
-                int num = x[count++];
-                ColumnText.ShowTextAligned(pbfOver, Element.ALIGN_LEFT, new Phrase(time.Start), num, 390, 0);
-                ColumnText.ShowTextAligned(pbfOver, Element.ALIGN_LEFT, new Phrase(time.LunchStart), num, 375, 0);
-                ColumnText.ShowTextAligned(pbfOver, Element.ALIGN_LEFT, new Phrase(time.LunchEnd), num, 360, 0);
-                ColumnText.ShowTextAligned(pbfOver, Element.ALIGN_LEFT, new Phrase(time.End), num, 345, 0);
+                ColumnText.ShowTextAligned(pbfOver, Element.ALIGN_LEFT, new Phrase(time.Start), (int)time.Day, 390, 0);
+                ColumnText.ShowTextAligned(pbfOver, Element.ALIGN_LEFT, new Phrase(time.LunchStart), (int)time.Day, 375, 0);
+                ColumnText.ShowTextAligned(pbfOver, Element.ALIGN_LEFT, new Phrase(time.LunchEnd), (int)time.Day, 360, 0);
+                ColumnText.ShowTextAligned(pbfOver, Element.ALIGN_LEFT, new Phrase(time.End), (int)time.Day, 345, 0);
             }
             // date timesheet was filled
             ColumnText.ShowTextAligned(pbfOver, Element.ALIGN_LEFT, new Phrase(timesheet.date), 520, 74, 0);
