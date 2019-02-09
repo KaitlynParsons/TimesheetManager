@@ -31,6 +31,14 @@ namespace TimesheetManager
             {
                 configuration.RootPath = "Frontend/dist";
             });
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials());
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,6 +57,7 @@ namespace TimesheetManager
             app.UseDefaultFiles();
             app.UseStaticFiles();
             app.UseHttpsRedirection();
+            app.UseCors("CorsPolicy");
             app.UseMvc();
 
             app.UseSpa(spa =>
