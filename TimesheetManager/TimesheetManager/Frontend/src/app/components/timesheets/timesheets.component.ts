@@ -1,6 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { timesheetModel } from '../models/timesheetModel';
+import { timesheetModel } from '../../models/timesheetModel';
 
 @Component({
   selector: 'app-timesheets',
