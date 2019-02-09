@@ -106,12 +106,13 @@ namespace TimesheetManager.Controllers
             ColumnText.ShowTextAligned(pbfOver, Element.ALIGN_LEFT, new Phrase(timesheet.startPeriod + " - " + timesheet.endPeriod), 115, 472, 0);
             ColumnText.ShowTextAligned(pbfOver, Element.ALIGN_LEFT, new Phrase(timesheet.payDate), 390, 472, 0);
             // iterate through the x locations on the timesheet template and add each time value to its given position
-            foreach (int num in x)
+            foreach (var time in timesheet.timesheetTotals)
             {
-                ColumnText.ShowTextAligned(pbfOver, Element.ALIGN_LEFT, new Phrase(timesheet.timesheetTotals[count].Start), num, 390, 0);
-                ColumnText.ShowTextAligned(pbfOver, Element.ALIGN_LEFT, new Phrase(timesheet.timesheetTotals[count].LunchStart), num, 375, 0);
-                ColumnText.ShowTextAligned(pbfOver, Element.ALIGN_LEFT, new Phrase(timesheet.timesheetTotals[count].LunchEnd), num, 360, 0);
-                ColumnText.ShowTextAligned(pbfOver, Element.ALIGN_LEFT, new Phrase(timesheet.timesheetTotals[count++].End), num, 345, 0);
+                int num = x[count++];
+                ColumnText.ShowTextAligned(pbfOver, Element.ALIGN_LEFT, new Phrase(time.Start), num, 390, 0);
+                ColumnText.ShowTextAligned(pbfOver, Element.ALIGN_LEFT, new Phrase(time.LunchStart), num, 375, 0);
+                ColumnText.ShowTextAligned(pbfOver, Element.ALIGN_LEFT, new Phrase(time.LunchEnd), num, 360, 0);
+                ColumnText.ShowTextAligned(pbfOver, Element.ALIGN_LEFT, new Phrase(time.End), num, 345, 0);
             }
             // date timesheet was filled
             ColumnText.ShowTextAligned(pbfOver, Element.ALIGN_LEFT, new Phrase(timesheet.date), 520, 74, 0);
