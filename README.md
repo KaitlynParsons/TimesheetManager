@@ -7,6 +7,6 @@ TimesheetManager is a project to fill out a basic timesheet template using the i
 - [x] Begin implementation of frontend
 - [ ] Continue frontend implementation 
 
-## Future 
+**Future** 
 - [ ] Add users
 - [ ] Add role levels (admin, user)
